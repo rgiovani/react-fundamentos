@@ -10,17 +10,21 @@ import Condicional from './components/básicos/Condicional';
 import CondicionalComIf from './components/básicos/CondicionalComIf';
 import Pai from './components/comunicacao/direta/Pai';
 import Super from './components/comunicacao/indireta/Super';
+import Input from './components/form/Input';
 
 const app = (props) => {
     return (
         <div className="App">
-            <Card titulo="# 08 - Comunicação Indireta" color="#000 ">
+            <Card titulo="# 09 - Input" color="#256EB0">
+                <Input></Input>
+            </Card>
+            <Card titulo="# 08 - Comunicação Indireta" color="#000">
                 <Super></Super>
             </Card>
-            <Card titulo="# 07 - Comunicação Direta" color="#C821D3 ">
+            <Card titulo="# 07 - Comunicação Direta" color="#C821D3">
                 <Pai sobrenome="Freitas"></Pai>
             </Card>
-            <Card titulo="# 06 - Condicional com If" color="#5DADE2 ">
+            <Card titulo="# 06 - Condicional com If" color="#5DADE2">
                 <CondicionalComIf numero={11}></CondicionalComIf>
             </Card>
             <Card titulo="# 05 - Condicional" color="#138D75">
